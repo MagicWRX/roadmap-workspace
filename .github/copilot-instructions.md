@@ -149,3 +149,31 @@ export async function execute(inputs) {
 
 ## Retirement Notice
 **Firebase and Firebase Emulators have been retired.** Do not add new Firebase integrations or rely on Firebase emulators for local development. Use approved alternatives listed in the SSOT (`DOCs/BUSINESS/BUSINESS_WORKSPACES.md`) and the `SHARED/` workspace for replacement tooling. Update any workspace environment variables or docs that reference Firebase.
+
+<!-- Use this file to provide workspace-specific custom instructions to Copilot. For more details, visit https://code.visualstudio.com/docs/copilot/copilot-customization#_use-a-githubcopilotinstructionsmd-file -->
+
+# 🌐 AMAZING BUSINESS ECOSYSTEM CONTEXT
+> **Parent SSOT:** `DOCs/BUSINESS/BUSINESS_WORKSPACES.md`
+> **Role:** You are a developer in the Amazing Business family.
+> **Shared Code:** Check `SHARED/` before building generic tools. Surface improvements to `SHARED`.
+> **Unity:** Respect the global architecture defined in the Parent SSOT.
+
+# ROADMAP Project Instructions
+
+This is the ROADMAP workspace for managing Amazing Business roadmap tasks and AI prompt generation.
+
+## Core Functionality
+- **Modular Scripts**: `lib/parseRoadmap.js` parses BUSINESS_ROADMAP.md for pending tasks
+- **AI Prompt Generation**: `lib/generatePrompt.js` formats tasks into structured prompts
+- **Main Script**: `scripts/run_roadmap_business.js` orchestrates the process
+
+## Guardrails
+- **SSOT Adherence**: Always read from `DOCs/BUSINESS/BUSINESS_ROADMAP.md` - never maintain local copies
+- **Modular Design**: Keep parsing and generation logic separate for reusability
+- **No Direct Edits**: Do not edit BUSINESS_ROADMAP.md directly; use proper workflow
+- **Stackable Scripts**: Design scripts to be composable with other ecosystem tools
+
+## Development Workflow
+- Test scripts with `node scripts/run_roadmap_business.js`
+- Ensure modular functions are exported for reuse
+- Update `DOCs/SCRIPTS/SCRIPTS_REGISTRY.md` when adding new scripts
