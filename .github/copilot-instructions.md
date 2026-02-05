@@ -35,6 +35,32 @@ You are working within the **Amazing Business Ecosystem**, a family of interconn
 - **Update:** If you complete a task, mark it as `[x]` in the roadmap.
 - **Drift Check:** If a user asks for a feature NOT on the roadmap, warn them: *"This is not on the current roadmap. Should we add it or is this an exploration?"*
 
+### AI Behavior & Drift Prevention (CRITICAL)
+
+**AI Memory Limitations**: AI assistants lack persistent memory across sessions. Every interaction starts fresh, so documentation is the ONLY reliable source of truth.
+
+#### Mandatory Pre-Edit Checklist
+BEFORE making ANY changes, you MUST:
+1. **Read SSOT Docs**: Review `DOCs/BUSINESS/BUSINESS_WORKSPACES.md` and `DOCs/BUSINESS/BUSINESS_ROADMAP.md`
+2. **Check Gold Standards**: Consult the relevant Gold Standard doc
+3. **Verify Current State**: Run `run-roadmap` to see active tasks
+4. **Confirm Alignment**: Ensure changes align with current roadmap priorities
+
+#### Drift Detection Protocol
+- **Inconsistent AI Behavior**: Different AI responses require validation against docs
+- **Stack Documentation**: Keep multiple relevant docs open during work
+- **Cross-Reference**: Always check 2+ sources before implementing
+- **Post-Change Validation**: Run tests and verify against SSOT after changes
+
+#### AI Response Validation
+When AI suggests changes:
+- Does it reference the correct SSOT docs?
+- Does it follow the Ironclad Workflow?
+- Does it maintain ecosystem unity?
+- Does it avoid duplication with SHARED tools?
+
+**If ANY doubt exists, STOP and consult human review.** Drift prevention is more important than speed.
+
 ### The Ironclad Workflow (Mandatory)
 Every task must follow this cycle to prevent drift and ensure quality:
 
