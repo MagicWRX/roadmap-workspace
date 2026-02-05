@@ -177,3 +177,29 @@ This is the ROADMAP workspace for managing Amazing Business roadmap tasks and AI
 - Test scripts with `node scripts/run_roadmap_business.js`
 - Ensure modular functions are exported for reuse
 - Update `DOCs/SCRIPTS/SCRIPTS_REGISTRY.md` when adding new scripts
+
+## AI Behavior & Drift Prevention (CRITICAL)
+
+**AI Memory Limitations**: AI assistants lack persistent memory across sessions. Every interaction starts fresh, so documentation is the ONLY reliable source of truth.
+
+### Mandatory Pre-Edit Checklist
+BEFORE making ANY changes, you MUST:
+1. **Read SSOT Docs**: Review `DOCs/BUSINESS/BUSINESS_WORKSPACES.md` and `DOCs/BUSINESS/BUSINESS_ROADMAP.md`
+2. **Check Gold Standards**: Consult the relevant Gold Standard doc (e.g., `DOCs/ROADMAP/ROADMAP_GOLD_STANDARD.md`)
+3. **Verify Current State**: Run `run-roadmap` to see active tasks
+4. **Confirm Alignment**: Ensure changes align with current roadmap priorities
+
+### Drift Detection Protocol
+- **Inconsistent AI Behavior**: Different AI responses require validation against docs
+- **Stack Documentation**: Keep multiple relevant docs open during work
+- **Cross-Reference**: Always check 2+ sources before implementing
+- **Post-Change Validation**: Run tests and verify against SSOT after changes
+
+### AI Response Validation
+When AI suggests changes:
+- Does it reference the correct SSOT docs?
+- Does it follow the Ironclad Workflow?
+- Does it maintain ecosystem unity?
+- Does it avoid duplication with SHARED tools?
+
+**If ANY doubt exists, STOP and consult human review.** Drift prevention is more important than speed.

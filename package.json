@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "private": true,
   "scripts": {
+    "check-ssot": "node workflow/check-ssot.js",
     "dev": "next dev -p 3015",
     "build": "next build",
     "start": "next start",
