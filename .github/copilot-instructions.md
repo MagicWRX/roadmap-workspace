@@ -16,7 +16,7 @@ You are working within the **Amazing Business Ecosystem**, a family of interconn
 - **Don't Duplicate:** Before building a generic tool (Auth, Blog, Media), check `SHARED/`.
 - **Surface Improvements:** If you improve a tool in a child workspace, suggest moving it to `SHARED` so other projects benefit.
 - **Monetization:** Tools built here often become products for `MagicWRX` customers.
-- **Registry:** Use `@magicwrx/*` packages from GitHub Packages. Do NOT use `file:` paths in production.
+- **Registry:** Use `@magicwrxtools/*` packages from GitHub Packages. Do NOT use `file:` paths in production.
 - **Monorepo:** `SHARED` is a monorepo. When working there, respect the workspace structure and build orchestration.
 
 ### 🛠️ Development Standards
